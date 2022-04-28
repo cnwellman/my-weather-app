@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
@@ -33,7 +33,7 @@ li {
 
 .weather-app .current-temp {
   font-size: 40px;
-  font-weight: 200;
+  font-weight: 350;
 }
 
 .weather-app .units {
