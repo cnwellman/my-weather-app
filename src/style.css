@@ -30,6 +30,15 @@ li:first-letter {
 }
 
 .weather-app {
+  background: linear-gradient(
+    90deg,
+    rgb(217, 115, 115) 22.3%,
+    rgb(234, 245, 165) 59.1%,
+    rgb(165, 245, 242) 89.7%
+  );
+}
+
+.weather-app {
   padding: 20px;
   border: 1px solid #d9d9d9;
   border-radius: 10px;
