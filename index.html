@@ -26,7 +26,33 @@
         <div class="weather-app">
           <div class="row">
             <div class="col-6">
-              Search bar
+              <form id="search-form" class="mb-5">
+                <div class="row">
+                  <input
+                    type="search"
+                    placeholder="Enter a City"
+                    class="form-control"
+                    id="enter-city"
+                    autocomplete="off"
+                  />
+                  <div class="col-9">
+                    <input
+                      type="submit"
+                      value="Current City"
+                      class="btn btn-primary w-100"
+                      id="current-button"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="submit"
+                      value="Search"
+                      class="btn btn-primary"
+                      id="search-button"
+                    />
+                  </div>
+                </div>
+              </form>
               <h1 id="city"></h1>
               <ul>
                 <li>Last updated: <span id="date"></span></li>
@@ -34,7 +60,7 @@
                 <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
-            <div class="col-6">
+            <div class="col-6" id="second-col">
               <h2>Monday</h2>
               <ul>
                 <li>April 23</li>

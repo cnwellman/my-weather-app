@@ -40,7 +40,7 @@ li:first-letter {
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #d9d9d9;
+  border: 1px transparent #d9d9d9;
   border-radius: 10px;
 }
 
@@ -54,4 +54,26 @@ li:first-letter {
   font-size: 16px;
   top: -16px;
   left: -1px;
+}
+
+#enter-city {
+  position: relative;
+  right: -12px;
+  margin-top: 8px;
+}
+
+#current-button {
+  background-color: #eaf5a6;
+  color: black;
+  margin-top: 10px;
+}
+
+#search-button {
+  background-color: #aef5e9;
+  color: black;
+  margin-top: 10px;
+}
+
+#second-col {
+  text-align: center;
 }
