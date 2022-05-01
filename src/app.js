@@ -30,11 +30,12 @@ function formatDate(date) {
 
   let todayDate = date.getDate();
 
-  return `${day} <br /> ${month}/${todayDate}`;
+  return `${day} ${month}/${todayDate}`;
 }
 
 let currentDate = document.querySelector("#date");
-currentDate.innerHTML = formatDate(currentDate);
+currentDate.innerHTML = `${formatDate(new Date())} ${formatTime(new Date())}`;
+
 //end Date function
 
 function displayTemperature(response) {

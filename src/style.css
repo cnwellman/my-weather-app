@@ -31,10 +31,11 @@ li:first-letter {
 
 .weather-app {
   background: linear-gradient(
-    90deg,
-    rgb(217, 115, 115) 22.3%,
-    rgb(234, 245, 165) 59.1%,
-    rgb(165, 245, 242) 89.7%
+    179.7deg,
+    rgb(248, 126, 126) -0.5%,
+    rgb(251, 206, 143) 35.3%,
+    rgb(184, 252, 233) 67.2%,
+    rgb(118, 162, 229) 92.3%
   );
 }
 
@@ -63,17 +64,22 @@ li:first-letter {
 }
 
 #current-button {
-  background-color: #eaf5a6;
+  background-color: #a2dde8;
   color: black;
   margin-top: 10px;
 }
 
 #search-button {
-  background-color: #aef5e9;
+  background-color: #a2dde8;
   color: black;
   margin-top: 10px;
 }
 
 #second-col {
   text-align: center;
+}
+
+#description {
+  font-size: 20px;
+  margin-top: 40px;
 }
