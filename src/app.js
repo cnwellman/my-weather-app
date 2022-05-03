@@ -12,7 +12,8 @@ function formatTime(timestamp) {
   return ` ${hours}:${minutes}`;
 }
 //Date function
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let dayIndex = date.getDay();
   let days = [
     "Sunday",
@@ -51,12 +52,14 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  dateElement.innerHTML = formatTime(response.data.dt * 1000);
+  dateElement.innerHTML = `${formatDate(response.data.dt * 1000)} ${formatTime(
+    response.data.dt * 1000
+  )}`;
   iconElement.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  iconElement.setAttribute(response.data.weather[0].description);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function search(city) {
