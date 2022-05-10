@@ -6,6 +6,7 @@ h1 {
   font-size: 28px;
   font-weight: 100px;
   line-height: 30px;
+  opacity: 0.6;
 }
 
 ul {
@@ -68,6 +69,24 @@ li:first-letter {
   color: black;
 }
 
+.weather-forecast {
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature {
+  font-size: 14px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
 #enter-city {
   position: relative;
   right: -12px;
@@ -93,4 +112,5 @@ li:first-letter {
 #description {
   font-size: 20px;
   margin-top: 40px;
+  opacity: 0.6;
 }
