@@ -101,12 +101,24 @@ li:first-letter {
   background-color: #a2dde8;
   color: black;
   margin-top: 10px;
+  box-shadow: 3px 3px #4f4d4d;
+  transition: 0.2s;
+}
+
+#current-button:hover {
+  background-color: #b4f7e8;
 }
 
 #search-button {
   background-color: #a2dde8;
   color: black;
   margin-top: 10px;
+  box-shadow: 3px 3px #4f4d4d;
+  transition: 0.2s;
+}
+
+#search-button:hover {
+  background-color: #b4f7e8;
 }
 
 #last-updated-title {
