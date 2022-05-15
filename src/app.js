@@ -31,7 +31,7 @@ function formatDate(timestamp) {
 
   let todayDate = date.getDate();
 
-  return `${day} ${month}/${todayDate}`;
+  return `${day}, ${month}/${todayDate} @`;
 }
 
 //end Date function
