@@ -100,7 +100,7 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
 
   celsiusTemperature = response.data.main.temp;
-  console.log(response);
+
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -130,6 +130,28 @@ function handleSubmit(event) {
   let enterCityElement = document.querySelector("#enter-city");
   search(enterCityElement.value);
 }
+
+//
+
+function showPosition(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiKey = "26823b98ce91dbbc4d3ec30137c71dcb";
+  let units = "imperial";
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
+  let apiUrl = `${apiEndpoint}?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function showCurrentLocationTemp(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let currentLocation = document.querySelector("#current-button");
+currentLocation.addEventListener("click", showCurrentLocationTemp);
+
+//
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
