@@ -131,8 +131,6 @@ function handleSubmit(event) {
   search(enterCityElement.value);
 }
 
-//
-
 function showPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
@@ -158,5 +156,3 @@ form.addEventListener("submit", handleSubmit);
 
 let currentDate = document.querySelector("#date");
 currentDate.innerHTML = `${formatDate(new Date())} ${formatTime(new Date())}`;
-
-search("Portland");
