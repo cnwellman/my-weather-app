@@ -156,3 +156,5 @@ form.addEventListener("submit", handleSubmit);
 
 let currentDate = document.querySelector("#date");
 currentDate.innerHTML = `${formatDate(new Date())} ${formatTime(new Date())}`;
+
+search("Portland");
